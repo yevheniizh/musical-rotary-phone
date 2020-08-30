@@ -1,3 +1,71 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    max-width: 1000px;
+    min-width: 300px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+header.sticky {
+    height: 25px;
+    position: sticky;
+    top: 0px;
+    background-color: grey;
+}
+
 nav {
-    background-color;: red
+    float: right;
+}
+
+h3 {
+    /* background-color: grey; */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    font-variant: inherit;
+}
+
+.button {
+    display: inline;
+    color: black;
+    background-color: lavender;
+    border: 1px solid;
+    border-color: black;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(51, 153, 255);
+}
+
+/*  #mail_me {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+} */
+
+footer {
+    height: 25px;
+}
+
+#Made_By {
+    float: right;
+}
+
+.zhopka {
+    width: 100%;
+    display: flex; /*тип группирования элементов*/
+    flex-direction: row;
+    flex-wrap: wrap; /*перенос элементов при уменьшении размеров страницы*/
+    justify-content: space-around; /*выравнивание элементов относительно контейнера*/
+    align-content: center; /*выравнивание по горизонтали; выравнивание элементов относительно друг друга и пространства в контейнере*/
+    align-items: center; /*выравнивание по вертикали*/
+    background-color: grey;
+}
+
+.container {
+    width:  150px;
+    justify-content: center; 
 }

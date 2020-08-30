@@ -3,19 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <title>&bull; Zhyrov`s Portfolio &bull;</title>
+        <!-- Normalize.css подключать самым первым! -->
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <!-- Внешние ссылки Google подключать перед своими стилями! -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Quicksand&display=swap">
         <link rel="stylesheet" href="styles/style.css" type="text/css">
+        <!-- Переключение стилей -->
+        <!-- <link rel="stylesheet" media="(min-width: 500px) and (max-width: 799px)" href="/" type="text/css"> -->
     </head>
     <body>
-        <header>
+        <header class='sticky'>
             <!--Лого в шапке-->
-            <a href="https://moqups.com/"><img src="https://landing.moqups.com/img/logo@2x.png" alt="logo" width="100" height="30" style="background-color:rgb(51, 153, 255);"/> </a>
+            <a href="https://moqups.com/"><img src="https://landing.moqups.com/img/logo@2x.png" alt="logo" width="100" height="25" style="background-color:rgb(51, 153, 255);"/> </a>
             <!--Навигация по сайту-->
             <nav>
                 <a href='#My_Achievements'>My Achievements</a>
                 <a href='#My_Projects'>My Projects</a>
                 <a href='#Contact_Me'>Contact Me</a>              
             </nav>
-        </header>
+        </header>   
         <hr>
 
         <!--Первая часть-->
@@ -31,10 +37,10 @@
             </p>
 
             <!-- Кнопка -->
-            <a href='CV Template for IT Academy. Zhyrov.docx' download=''>Download CV</a>
+            <a href='CV Template for IT Academy. Zhyrov.docx' class='button' download=''>Download CV</a>
             
             <!-- Кнопка -->
-            <a href='#Contact_Me'>Contact Me</a>     
+            <a href='#Contact_Me' class='button'>Contact Me</a>     
         </section>
         <hr>
 
@@ -47,49 +53,44 @@
             <p>
                 ...DESCRIPTION...
             </p>
-            <article>
-                <header>
-                    <figure>
-                        <img src='' alt='Achieve 1 picture' height="150" width="150">
-                        <figcaption>Achieve 1 picture</figcaption>
-                    </figure>
-                </header>
-                <main>
-                    <h3>Achieve 1 name</h3>
-                    <p>
-                        <span>Achieve 1 description</span>
-                    </p>
-                </main>
-            </article>
-            <article>
-                <header>
-                    <figure>
-                        <img src='' alt='Achieve 2 picture' height="150" width="150">
-                        <figcaption>Achieve 2 picture</figcaption>
-                    </figure>
-                </header>
-                <main>
-                    <h3>Achieve 2 name</h3>
-                    <p>
-                        <span>Achieve 2 description</span>
-                    </p>
-                </main>
-            </article>
-            <article>
-                <header>
-                    <figure>
-                        <img src='' alt='Achieve 3 picture' height="150" width="150">
-                        <figcaption>Achieve 3 picture</figcaption>
-                    </figure>
-                </header>
-                <main>
-                    <h3>Achieve 3 name</h3>
-                    <p>
-                        <span>Achieve 3 description</span>
-                    </p>
-                </main>
-            </article>
-            
+            <div class="zhopka">
+                <article class="container">
+                    <header>
+                        <figure>
+                            <img src='' alt='Achieve 1 picture' height="150" width="150">
+                            <figcaption>Achieve 1 picture</figcaption>
+                        </figure>
+                    </header>
+                    <main>
+                        <h3>Achieve 1 name</h3>
+                        <p>Achieve 1 description</p>
+                    </main>
+                </article>
+                <article class="container">
+                    <header>
+                        <figure>
+                            <img src='' alt='Achieve 2 picture' height="150" width="150">
+                            <figcaption>Achieve 2 picture</figcaption>
+                        </figure>
+                    </header>
+                    <main>
+                        <h3>Achieve 2 name</h3>
+                        <p>Achieve 2 description</p>
+                    </main>
+                </article>
+                <article class="container">
+                    <header>
+                        <figure>
+                            <img src='' alt='Achieve 3 picture' height="150" width="150">
+                            <figcaption>Achieve 3 picture</figcaption>
+                        </figure>
+                    </header>
+                    <main>
+                        <h3>Achieve 3 name</h3>
+                        <p>Achieve 3 description</p>
+                    </main>
+                </article>
+            </div>
         </section>
         <hr>
 
@@ -99,54 +100,44 @@
                 <h2>My Projects</h2>
             </a>
             <p>...DESCRIPTION...</p>
-            <article>
-                <header>
-                    <figure>
-                        <img src='' alt='Project 1 picture' height="150" width="150">
-                        <figcaption>Project 1 picture</figcaption>
-                    </figure>
-                </header>
-                <main>
-                    <p>
+            <div class="zhopka">
+                <article>
+                    <header>
+                        <figure>
+                            <img src='' alt='Project 1 picture' height="150" width="150">
+                            <figcaption>Project 1 picture</figcaption>
+                        </figure>
+                    </header>
+                    <main>
                         <h3>Project 1 name</h3>
-                    </p>
-                    <p>
-                        <span>Project 1 description</span>
-                    </p>
-                </main>
-            </article>
-            <article>
-                <header>
-                    <figure>
-                        <img src='' alt='Project 2 picture' height="150" width="150">
-                        <figcaption>Project 2 picture</figcaption>
-                    </figure>
-                </header>
-                <main>
-                    <p>
+                        <p>Project 1 description</p>
+                    </main>
+                </article>
+                <article>
+                    <header>
+                        <figure>
+                            <img src='' alt='Project 2 picture' height="150" width="150">
+                            <figcaption>Project 2 picture</figcaption>
+                        </figure>
+                    </header>
+                    <main>
                         <h3>Project 2 name</h3>
-                    </p>
-                    <p>
-                        <span>Project 2 description</span>
-                    </p>
-                </main>
-            </article>
-            <article>
-                <header>
-                    <figure>
-                        <img src='' alt='Project 3 picture' height="150" width="150">
-                        <figcaption>Project 3 picture</figcaption>
-                    </figure>
-                </header>
-                <main>
-                    <p>
+                        <p>Project 2 description</p>
+                    </main>
+                </article>
+                <article>
+                    <header>
+                        <figure>
+                            <img src='' alt='Project 3 picture' height="150" width="150">
+                            <figcaption>Project 3 picture</figcaption>
+                        </figure>
+                    </header>
+                    <main>
                         <h3>Project 3 name</h3>
-                    </p>
-                    <p>
-                        <span>Project 3 description</span>
-                    </p>
-                </main>
-            </article>
+                        <p>Project 3 description</p>
+                    </main>
+                </article>
+            </div>
         </section>
         <hr>
 
@@ -155,7 +146,7 @@
             <a name="Contact_Me">
                 <h2>Contact Me</h2>
             </a>
-            <form id="mail me">
+            <form id="mail_me">
                 <fieldset>
                     <input name="email" type="email" required placeholder="Email*">
                     <input name="name" placeholder="What's your name?">
@@ -181,8 +172,8 @@
 
         <footer>
             <!--Лого в подвале-->
-            <a href="https://moqups.com/"><img src="https://landing.moqups.com/img/logo@2x.png" alt="logo" width="100" height="30" style="background-color:rgb(51, 153, 255);"/> </a>
-            <span>Made by Yevhenii Zhyrov &#0169;</span>
+            <a href="https://moqups.com/"><img src="https://landing.moqups.com/img/logo@2x.png" alt="logo" width="100" height="25" style="background-color:rgb(51, 153, 255);"/> </a>
+            <span id='Made_By'>Made by Yevhenii Zhyrov &#0169;</span>
         </footer>
 
     </body>
