@@ -1,12 +1,12 @@
 body {
     font-family: 'Quicksand', sans-serif;
+    width: 960px;
     max-width: 1000px;
     min-width: 300px;
-    width: 960px;
     margin: 0 auto;
 }
 
-header.sticky { /*fixing border on top*/
+header.sticky {
     height: 25px;
     position: sticky;
     top: 0px;
@@ -18,7 +18,6 @@ nav {
 }
 
 h3 {
-    /* background-color: grey; */
     font-family: 'Quicksand', sans-serif;
     font-weight: 900;
     font-variant: inherit;
@@ -31,32 +30,27 @@ h3 {
 }
 
 a.button {
-    display: inline-block;
+    display: inline-flex;
     height: 1.5em;
-    width: ;
+    width: 12em;
     color: black;
     border: 1px solid;
     border-color: black;
-    text-decoration: none; /*убрал подчеркивание для ссылок*/
+    text-decoration: none;
     margin: 10px;
     padding: 10px;
-    border-radius: 2em;
+    border-radius: 1.5em;
     box-shadow: 2px 2px 2px black;
     cursor: pointer;
     transition: transform 0.5s ease;
     align-items: center;
+    justify-content: center;
 }
 
 a.button:hover {
     background-color: rgb(51, 153, 255);
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
-
-/*  #mail_me {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-} */
 
 footer {
     height: 25px;
@@ -68,25 +62,27 @@ footer {
 
 .zhopka {
     width: 100%;
-    display: flex; /*тип группирования элементов*/
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /*перенос элементов при уменьшении размеров страницы*/
-    justify-content: space-around; /*выравнивание элементов относительно контейнера*/
-    align-content: center; /*выравнивание по горизонтали; выравнивание элементов относительно друг друга и пространства в контейнере*/
-    align-items: center; /*выравнивание по вертикали*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
     background-color: grey;
 }
 
 .container {
-    width:  150px;
+    width: 150px;
     justify-content: center; 
 }
 
-/* #overflow {
+/*
+#overflow {
     height: 200px;
     width: 200px;
     overflow: scroll;
-} */
+}
+*/
 
 
 /* GRID */
@@ -97,4 +93,39 @@ footer {
     display: grid;
     grid-template-columns: 250px 250px 250px;
     grid-template-rows: 250px;
+}
+
+/*FINISH GRID*/
+
+.contact_form ul {
+    width:750px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+}
+.contact_form li{
+    padding: 12px;
+    /* border-bottom: 1px solid black; */
+    position: relative;
+}
+
+input, textarea {
+    font-family: Georgia, Times, "Times New Roman", sans-serif;
+    font-size: 15px;
+    border: 1px black solid;
+}
+
+input:focus {
+    outline: none;
+}
+
+:-moz-placeholder {
+    color: #eee;
+    opacity: 0.5;
+}
+
+::-webkit-input-placeholder {
+    color: #eee);
+    opacity: 0.5;
 }

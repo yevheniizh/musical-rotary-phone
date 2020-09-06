@@ -39,10 +39,10 @@
             </p>
 
             <!-- Кнопка -->
-            <a href='CV Template for IT Academy. Zhyrov.docx' class='button' download=''>Download CV</a>
+            <a href='CV Template for IT Academy. Zhyrov.docx' class='button' download=''><b>Download CV</b> </a>
             
             <!-- Кнопка -->
-            <a href='#Contact_Me' class='button'>Contact Me</a>     
+            <a href='#Contact_Me' class='button'><b>Contact Me</b></a>     
         </section>
         <hr>
 
@@ -148,12 +148,25 @@
             <a name="Contact_Me">
                 <h2>Contact Me</h2>
             </a>
-            <form id="mail_me">
+            <span class="required_notification">* Denotes Required Field</span>
+            <form class="contact_form" action="" method="GET" name="contact_form"> <!--action is attribute with adress for sending form on server, methot is attribute that point on method of sending data on server (GET and POST)-->
                 <fieldset>
-                    <input name="email" type="email" required placeholder="Email*">
-                    <input name="name" placeholder="What's your name?">
-                    <input name="message" placeholder="Type message here">
-                    <button>Send Request</button>
+                    <ul>
+                        <li>
+                            <!-- <label for="name">Name</label> -->
+                            <input id="name" name="name" placeholder="What's your name?">
+                        </li>
+                        <li>
+                            <!-- <label for="email">Email</label> -->
+                             <input id="email" name="email" type="email" placeholder="Email*" required>                   
+                        </li>
+                        <li>
+                            <!-- <label for="message">Message</label> -->
+                            <textarea id="message" name="message" placeholder="Type message here" cols="40" rows="6" ></textarea>                   
+                        </li>
+                        <li>
+                            <button class="submit" type="submit">Send Request</button> </li>
+                    </ul>
                 </fieldset>
             </form>
             <br>
