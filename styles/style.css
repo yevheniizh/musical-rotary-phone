@@ -31,7 +31,7 @@ h3 {
 
 a.button {
     display: inline-flex;
-    height: 1.5em;
+    height: 20px;
     width: 12em;
     color: black;
     border: 1px solid;
@@ -39,7 +39,7 @@ a.button {
     text-decoration: none;
     margin: 10px;
     padding: 10px;
-    border-radius: 1.5em;
+    border-radius: 20px;
     box-shadow: 2px 2px 2px black;
     cursor: pointer;
     transition: transform 0.5s ease;
@@ -49,10 +49,12 @@ a.button {
 
 a.button:hover {
     background-color: rgb(51, 153, 255);
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 footer {
+    display: block;
+    float: bottom;
     height: 25px;
 }
 
@@ -97,23 +99,59 @@ footer {
 
 /*FINISH GRID*/
 
+form.contact_form {
+    display: block;
+    float: right;
+    width: 50%;
+    height: 350px;
+}
+
+div.contact_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px auto;
+    margin: auto 0;
+    width: 50%;
+    height: 175px;
+}
+
+.contact_form span {
+    display: block;
+    padding-bottom: 10px;
+}
+
 .contact_form ul {
-    width:750px;
+    width: 100%;
     list-style-type: none;
     list-style-position: outside;
     margin: 0px;
     padding: 0px;
 }
 .contact_form li{
-    padding: 12px;
+    display: flex;
+    padding: 5px;
+    margin: 5px;
     /* border-bottom: 1px solid black; */
-    position: relative;
+    /* position: relative; */
 }
 
 input, textarea {
     font-family: Georgia, Times, "Times New Roman", sans-serif;
-    font-size: 15px;
+    font-size: 18px;
+    width: 100%;
     border: 1px black solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+input {
+    height: 30px;
+}
+
+textarea {
+    height: 85px;
 }
 
 input:focus {
@@ -121,11 +159,50 @@ input:focus {
 }
 
 :-moz-placeholder {
-    color: #eee;
     opacity: 0.5;
 }
 
 ::-webkit-input-placeholder {
-    color: #eee);
     opacity: 0.5;
+}
+
+h2 {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.required_notification {
+    align-items: right;
+    color: #d45252; 
+    margin: 15px 0 0 0;
+}
+
+.contact_form textarea:focus { /* add this to the already existing style */
+    padding: 0 60px 15px 0;
+}
+
+.contact_form li:last-child {
+    justify-content: center;
+}
+
+button.submit {
+    display: inline-flex;
+    height: 20px;
+    width: 12em;
+    color: black;
+    border: 1px solid;
+    border-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+button.submit:hover {
+    background-color: rgb(51, 153, 255);
 }
