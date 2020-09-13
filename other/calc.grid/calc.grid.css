@@ -1,0 +1,86 @@
+#calc {
+    width: 600px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    display: grid;
+    grid-template-columns: 450px 150px;
+    grid-template-rows: 175px 500px;
+    /* grid-template-areas: "div.input div.input" "div.number div.math_operator";*/  /*grid-area hide*/
+}
+
+div.input {
+    /* grid-area: div.input; */ /*grid-area hide*/
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 100px;
+}
+
+.input__area {
+    height: 100%;
+    width: calc(100% - 50px);
+    padding: 0 25px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 25px 25px 0 0;
+}
+
+.input__area:focus {
+    outline: none;
+}
+
+.button {
+    height: 100%;
+    width: 100%;
+    border: 1px black solid;
+    margin: 0 auto;
+    font-size: 50px;
+    color: white;
+}
+
+div.number {
+    /* width: 75%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-content: flex-start;*/ /*flex hide*/
+    /* grid-area: div.number; */ /*grid-area hide*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+}
+
+.operator {
+    background-color: dimgray;
+}
+
+.nozero, .operator {
+    /* flex-basis: 150px; */ /*flex hide*/
+}
+
+.zero {
+    /* flex-basis: 300px; */ /*flex hide*/
+    border-radius: 0 0 0 20px;
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+
+.number__button {
+    background-color: gray;
+}
+
+div.math_operator {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-end; */ /*flex hide*/
+    /* grid-area: div.math_operator;*/ /*grid-area hide*/
+    display: grid;
+}
+
+.math_operator__button {
+    background-color: orange;
+}
+
+.equal {
+    border-radius: 0 0 25px 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Calc sample</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Quicksand&display=swap">
+    <link rel="stylesheet" href="calc.grid.css" type="text/css">
+</head>
+
+<body>
+    <form id="calc">
+        <div class='input'>
+            <input class="input__area" type="text" name="result">
+        </div>  
+        <div class="number">
+            <input class="button operator" type="button" name="ac" value="AC">
+            <input class="button operator" type="button" name="empty1" value="">
+            <input class="button operator" type="button" name="empty2" value="">
+            <input class="button nozero number__button" type="button" name="nine" value="9">
+            <input class="button nozero number__button" type="button" name="eight" value="8"> 
+            <input class="button nozero number__button" type="button" name="seven" value="7"> 
+            <input class="button nozero number__button" type="button" name="six" value="6"> 
+            <input class="button nozero number__button" type="button" name="five" value="5"> 
+            <input class="button nozero number__button" type="button" name="four" value="4"> 
+            <input class="button nozero number__button" type="button" name="three" value="3"> 
+            <input class="button nozero number__button" type="button" name="two" value="2">
+            <input class="button nozero number__button" type="button" name="one" value="1">
+            <input class="button zero number__button" type="button" name="zero" value="0">
+            <input class="button nozero number__button" type="button" name="point" value=".">
+        </div>
+        <div class="math_operator">
+            <input class="button math_operator__button" type="button" name="plus" value="+"> 
+            <input class="button math_operator__button" type="button" name="minus" value="-"> 
+            <input class="button math_operator__button" type="button" name="multiply" value="*"> 
+            <input class="button math_operator__button" type="button" name="devide" value="/">          
+            <input class="button math_operator__button equal" type="button" name="equal" value="=">
+        </div>
+    </form>
+    <script src="calc.grid.js"></script>
+</body>
+
+</html>
