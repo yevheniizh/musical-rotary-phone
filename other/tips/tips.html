@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips calc</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="tips.css">
+</head>
+
+<body>
+    <div id="main">
+
+        <ul class="InitialInputs" name="InitialInputs">
+            <li>
+                <div>Bill</div>
+                <input id="InitialInputs__bill" name="InitialInputs__bill" value="0.00">
+            </li>
+            <li>
+                <div>Tip %</div>
+                <div class="InitialInputs__tip" >
+                    <button id="InitialInputs__tip_minus">-</button>
+                    <input id="InitialInputs__tip_result" value="15">
+                    <button id="InitialInputs__tip_plus">+</button>
+                </div>
+            </li>
+            <li>
+                <div>Number of people</div>
+                <div class="InitialInputs__NumOfPeople">
+                    <button id="InitialInputs__NumOfPeople_minus">-</button>
+                    <input id="InitialInputs__NumOfPeople_result" value="1">
+                    <button id="InitialInputs__NumOfPeople_plus">+</button>
+                </div>
+            </li>
+        </ul>
+    
+        <ul class="DisplayCount">
+            <li>
+                <div class="DisplayCount_flexbox">
+                    <div>Tip</div>
+                    <div id="DisplayCount_tip">0.00</div>
+                </div>
+            </li>
+            <li>
+                <div class="DisplayCount_flexbox">
+                    <div>Total</div>
+                    <div id="DisplayCount_total">0.00</div>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+    <script src="tips.js"></script>
+</body>
+
+</html>
