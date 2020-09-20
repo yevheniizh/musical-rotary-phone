@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web AJAX lesson</title>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
-    <script src='web.js'></script>
 </head>
 
 <body>
@@ -16,6 +15,72 @@
     <p id='time'></p>
     <p id='jqweather'></p>
     <div class='otherhtml'></div>
+    
+    <div>
+        <input id='CityInput' value="">
+        <button id='CityInputButton' type="submit">Submit</button>
+        <p id='CityId'></p>
+    </div>
+    <div>
+        <input id='IdInput' value="">
+        <button id='IdInputButton' type="submit">Submit</button>
+        <div>
+            <img id='WeatherIcon'>
+        </div>
+        <p id='WeatherStatus'></p>
+    </div>
+    <div>
+        <table id='table' border="1">
+            <!-- <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+            </tr> -->
+            <!-- <tr>
+                <td>Green</td>
+                <td>Yellow</td>
+                <td>Orange</td>
+            </tr> -->
+            
+            <!-- Заголовочный -->
+            
+            <!-- <thead>
+                <tr>
+                    <th colspan="6">Погода на 5 дней вперёд</th>
+                </tr>
+                <tr>
+                    <th>Погода на сегодня</th>
+                    <th>Погода на завтра</th>
+                    <th>Погода на x2-завтра</th>
+                    <th>Погода на x3-завтра</th>
+                    <th>Погода на x4-завтра</th>
+                    <th>Погода на x5-завтра</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id='WeatherStatus0'>Body content 1</td>
+                    <td id='WeatherStatus1'>Body content 2</td>
+                    <td id='WeatherStatus2'>Body content 3</td>
+                    <td id='WeatherStatus3'>Body content 4</td>
+                    <td id='WeatherStatus4'>Body content 5</td>
+                    <td id='WeatherStatus5'>Body content 6</td>
+                </tr>
+            </tbody> -->
+            <!-- <tfoot>
+                <tr>
+                    <td>Footer content 1</td>
+                    <td>Footer content 2</td>
+                </tr>
+            </tfoot> -->
+        </table>
+    </div>
+    <script src='web.js'></script>
 </body>
 
 </html>
